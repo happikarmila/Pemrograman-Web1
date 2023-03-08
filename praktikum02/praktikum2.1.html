@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pengisian Form Biodata</title>
+    </head>
+    <body>
+    
+
+   <h1 style="text-align: center">Form Biodata Peserta</h1>
+   <form method="GET" action="registrasi.php">
+
+       <fieldset style="border: 1px solid;background-color: pink;">
+        <legend>Biodata Pribadi</legend>
+        <p>
+            <label>Nama Lengkap</label>
+            <input type="text" name="nama" value="" size="40"/>
+        </p>
+        <p>
+            <label>Tempat Lahir</label>
+            <input type="text" name="tmp_lahir" value="" size="40"/>
+        </p>
+        <p>
+            <label>Tanggal Lahir (dd-mm-yyyy)</label>
+            <input type="date" name="tgl_lahir" value=""/>
+        </p>
+        <p>
+            <label> Status Peserta</label>
+            <select name="status">
+                <option>--silakan pilih--</option>
+                <option value="siswa">pelajar</option>
+                <option value="mahasiswa">mahasiswa</option>
+                <option value="pegawai">pegawai</option>
+                <option value="wiraswasta">wiraswata</option>
+            </select>
+        </p>
+        <p>
+            <label>Jenis Kelamin</label>
+            <input type="radio" name="jk" value="L" checked/>laki-laki
+            <input type="radio" name="jk" value="P" checked/>Perempuan
+        </p>
+        <p>
+            <label>Alamat Lengkap</label>
+            <textarea name="alamat" cols="40" rows="3"></textarea>
+        </p>
+        <p>
+            <label>Hobi</label>
+            <input type="checkbox" value="membaca" name="hobi1"/>membaca
+            <input type="checkbox" value="menulis" name="hobi2"/>menulis
+            <input type="checkbox" value="menonton" name="hobi3"/>menonton
+            <input type="checkbox" value="badminton" name="hobi4"/>badminton
+        </p>
+        <div>
+            <input type="submit" value="kirim" name="proses"/>
+            <input type="reset" value="isi ulang"/>
+        </div>
+        </fieldset>
+   </form>
+</body>
+</html>
